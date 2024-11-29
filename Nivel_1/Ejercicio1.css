@@ -1,100 +1,126 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-max-width:1200px;
-margin: 1% auto;
+  max-width:1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+
+header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: black;
 }
 
-  header {
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: rgb(0, 0, 0);
-  }
-
-    .menu {
-    display: flex;
-    gap: 1.5%;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: rgb(70, 74, 98);
-    }
-
-      nav {
-      flex-grow: 8;
-      padding: 10px;
-      background-color: #ca4c4c;
-      }
-
-      .logo , .social {
-      flex-grow: 1;
-      padding: 10px;
-      background-color: #ca4c4c;
-      }
-    
-    .contenedor__banner {
-    padding: 20px;
-    background-color: #f79b10;
-    }
-
-      .banner {
-      font-size: 1.5em;
-      font-weight: bold;
-      padding: 10px;
-      background-color: #f1d626;
-      }
-
-  main {
+.menu {
   display: flex;
-  flex-flow: row;
-  gap: 20px; 
+  flex-direction: row;
+  gap: 20px;
   padding: 20px;
-  margin-bottom: 20px;
-  background-color: rgb(0, 0, 0);
+  background-color: #3c446a;
+}
+
+.logo, .social {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: #ca4c4c;
+
+}
+
+nav {
+  flex-grow: 7;
+  padding: 10px;
+  background-color: #ca4c4c;
+}
+
+.banner_container {
+  padding: 20px;
+  background-color: #f99b05;
+
+}
+
+.banner {
+  padding: 10px;
+  background-color: #f2df3b;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  background-color: black;
+}
+
+.blog {
+  flex-grow: 7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #5a5f80;
+}
+
+.blog_content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.blog_colum1, .blog_colum2 {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+article {
+  padding: 10px;
+  background-color: #256eb1;
+}
+
+.navegacion {
+  padding: 10px;
+  background-color: #92c6e4;
+}
+
+aside {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #e04545;
+}
+
+.publicidad {
+  padding: 10px;
+  background-color: #f2df3b;
+}
+
+footer {
+  padding: 20px;
+  background-color: black;
+}
+
+.pie {
+  padding: 10px;
+  background-color: #f0e399;
+}
+
+@media (max-width: 600px) {
+
+  .menu, main, .blog_content {
+    flex-direction: column;
   }
+}
 
-      .blog {
-      display: flex;
-      flex-wrap: wrap; 
-      flex-grow: 8;
-      gap: 20px; 
-      padding: 1.5%;   
-      background-color: rgb(99, 97, 110);
-      }
+@media (max-width: 1024px) {
 
-        article {
-        flex-basis: calc(50% - 1.1%);
-        padding: 10px;
-        background-color: rgb(57, 117, 237);
-        }
-
-        .navegacion {
-        flex-basis: 100%;
-        padding: 10px;
-        background-color: rgb(114, 162, 190);
-        }
+  .menu, main {
+    flex-direction: column;
+    }
   
-    aside {
-    display: flex;
-    flex-flow: column;
-    flex-grow: 1;
-    padding: 20px;
-    gap: 20px; 
-    background-color: rgb(224, 62, 62);
-    }
-
-      .publicidad {
-      padding: 10px;
-      background-color: rgb(245, 204, 60);
-      }
-
-  footer{
-  padding: 20px;
-  background-color: rgb(0, 0, 0);
-  }
-
-    .pie {
-      padding: 10px;
-      background-color: rgb(239, 239, 144);
-    }
+}
