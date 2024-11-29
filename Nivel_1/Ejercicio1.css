@@ -1,110 +1,100 @@
-body { /* ARREGLAR */
-    max-width:1200px;
-    margin: auto;
-    margin-top: 1%;
-  }
+* {
+  box-sizing: border-box;
+}
+
+body {
+max-width:1200px;
+margin: 1% auto;
+}
 
   header {
-    padding: 1.5%;
-    margin-bottom: 2%;
-    background-color: rgb(0, 0, 0);
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(0, 0, 0);
   }
 
     .menu {
-      display: flex;
-      gap: 1.5%;
-      padding: 1.5%;
-      margin-bottom: 1.5%;
-      background-color: rgb(70, 74, 98);
+    display: flex;
+    gap: 1.5%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(70, 74, 98);
     }
 
       nav {
-        flex-basis: 70%;
-        padding: 1%;
-        background-color: #ca4c4c;
+      flex-grow: 8;
+      padding: 10px;
+      background-color: #ca4c4c;
       }
 
-      .logo {
-        flex-basis: 15%;
-        padding: 1%;
-        background-color: #ca4c4c;
-      }
-
-      .social {
-        flex-basis: 15%;
-        padding: 1%;
-        background-color: #ca4c4c;
+      .logo , .social {
+      flex-grow: 1;
+      padding: 10px;
+      background-color: #ca4c4c;
       }
     
-    .contenedor-banner {
-      padding: 1.5%;
-      background-color: #f79b10;
+    .contenedor__banner {
+    padding: 20px;
+    background-color: #f79b10;
     }
 
       .banner {
-        background-color: #f1d626;
-        font-size: 1.5em;
-        font-weight: bold;
-        padding: 1%;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: #f1d626;
       }
 
   main {
-    display: flex;
-    flex-flow: row;
-    gap: 1.5%; 
-    padding: 1.5%;
-    margin-bottom: 1.5%;
-    background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-flow: row;
+  gap: 20px; 
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(0, 0, 0);
   }
 
-  .blog {
-    display: flex;
-    flex-wrap: wrap; 
-    flex-basis: 85%;
-    gap: 1.5%; 
-    padding: 1.5%;   
-    background-color: rgb(99, 97, 110);
-  }
+      .blog {
+      display: flex;
+      flex-wrap: wrap; 
+      flex-grow: 8;
+      gap: 20px; 
+      padding: 1.5%;   
+      background-color: rgb(99, 97, 110);
+      }
 
-   article {
-    box-sizing: border-box; 
-    flex-basis: calc(50% - 0.75%);
-    padding: 1%;
-    margin-bottom: 1.5%;
-    background-color: rgb(57, 117, 237);
-    }
+        article {
+        flex-basis: calc(50% - 1.1%);
+        padding: 10px;
+        background-color: rgb(57, 117, 237);
+        }
 
-    .navegacion {
-      flex-basis: 100%;
-      padding: 1%;
-      margin-bottom: 1%;
-      background-color: rgb(114, 162, 190);
-    }
+        .navegacion {
+        flex-basis: 100%;
+        padding: 10px;
+        background-color: rgb(114, 162, 190);
+        }
   
-  aside {
-    padding: 1.5%;
-    flex-basis: 15%;
+    aside {
     display: flex;
-    flex-flow: column;    
-    gap: 5%;
+    flex-flow: column;
+    flex-grow: 1;
+    padding: 20px;
+    gap: 20px; 
     background-color: rgb(224, 62, 62);
-  }
-
-    .publicidad {
-      padding: 2%;
-      background-color: rgb(245, 204, 60);
     }
+
+      .publicidad {
+      padding: 10px;
+      background-color: rgb(245, 204, 60);
+      }
 
   footer{
-    padding: 1.5%;
-    background-color: rgb(0, 0, 0);
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
   }
 
     .pie {
-      padding: 1.5%;
+      padding: 10px;
       background-color: rgb(239, 239, 144);
     }
-
-
-
-  
